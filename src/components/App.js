@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class App extends Component {
   render () {
     return <div>
+      <h1>Resize the window</h1>
       <div className='grid'>
         <div>1</div>
         <div>2</div>
