@@ -9,6 +9,36 @@ html {
 
 body {
   @include font-smoothing(on);
-  margin: 0;
+
+  margin: 20px;
   font: $base-text-size / 1 $base-font-family;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.span2 {
+  grid-column-end: span 2;
+}
+
+.grid .subitems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 20px;
+  grid-gap: 20px;
+}
+
+.grid .subitems div {
+  background-color: rgb(22, 42, 228);
+  border-radius: 3px;
+  padding: 0.2em;
+}
+
+.grid div {
+  background-color: rgb(115, 12, 1);
+  color: white;
+  padding: 10px;
 }
